@@ -240,10 +240,15 @@ def test(strDataPath, strModelPath, strOutPath):
 
 
 if __name__=="__main__":
+    # dic = {"task":"test",
+    # "data":"data/test/",
+    # "model":"model/massa_dlinknet.th",
+    # "out":"result/"}
+
     dic = {"task":"test",
-    "data":"data/test/",
-    "model":"model/massa_dlinknet.th",
-    "out":"result/"}
+    "data":"/public/home/zzutaopw/workspace/NL-LinkNet/NLLinkNet/dataset/val/images",
+    "model":"./model/massa_dlinknet.th",
+    "out":"./result/"}
 
     if 'data' in dic:
         strDataPath = dic['data']
